@@ -1,0 +1,4 @@
+SELECT jos_k2_items.id, jos_k2_items.title, jos_k2_items.catid, jos_k2_items.introtext, jos_k2_items.fulltext, jos_k2_items.extra_fields, jos_k2_items.extra_fields_search, jos_k2_attachments.filename, jos_k2_attachments.itemID
+FROM jos_k2_items
+INNER JOIN jos_k2_attachments
+ON jos_k2_items.id=jos_k2_attachments.itemID;

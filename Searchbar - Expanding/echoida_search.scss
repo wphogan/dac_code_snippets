@@ -1,0 +1,35 @@
+.search-bar {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    left: 30px;
+    .fa {
+        font-size: 25px;
+        color: $orange;
+        position: relative;
+        top: 3px;
+        right: 67px
+    }
+    .btn {
+        opacity: 0 !important;
+        position: relative;
+        right: 39px;
+        z-index: 999;
+    }
+}
+.search-bar  input[type=text] {
+    border-radius: 100px;
+    border: 0px;
+    padding: 10px 20px;
+    opacity: 0.5;
+    font-size: 20px;
+    transition: all ease-out 1s;
+    width: 100px;
+    max-width: 400px;
+    &:focus, &:hover{
+        outline: none;
+        opacity: 1;
+        width: 50%;        
+    }
+}
